@@ -1,0 +1,116 @@
+*{
+   margin:0;
+   padding:0;
+}
+body{
+   overflow-x:hidden;
+  
+}
+h1{
+  font-family: "Dancing Script", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  color:#500073;
+}
+.navbar ul li a{
+  color: #fff;
+  text-align: start;
+}
+nav{
+   background: linear-gradient(to top,#000000 0%,#500073 80%);
+   height:40px;
+   width:100%;
+   text-align: start;
+}
+
+.carousel-item img{
+   height:90vh;
+   width:100%;
+   object-fit:cover;
+} 
+
+.height{
+  height:70vh;
+  width:90%;
+} 
+.contact-card{
+    background-color:#500073;
+}
+.btn{
+  background-color:#500073;
+}
+footer ul li{
+   list-style: none;
+}
+.icons i{
+   margin-right:1rem;
+}
+textarea{
+  border-radius:7px;
+}
+.footer2{
+  background-color:#213555;
+  height:50px;
+}
+.NewsNotice{
+ background-color:#500073;
+}
+.card-title{
+  background-color:#500073;
+ }
+
+ /*------------------Gallary-----------------------------*/
+ 
+.slider{
+   height:250;
+   margin:auto;
+   position:relative;
+   width:90%;
+   display:grid;
+   place-self:center;
+   overflow: hidden;
+}
+.slide-track{
+  display:flex;
+  width:calc(250px * 18);
+  animation:scroll 40s linear infinite;
+}
+.slide img{
+   height:200px;
+   width:250;
+   display:flex;
+   padding:15px;
+} 
+.slide-track:hover{
+   animation-play-state: paused;
+}
+
+@keyframes scroll{
+     0%{
+        transform:translateX(0);
+     }
+     100%{
+        transform:translateX(calc(-250px * 9));
+     }
+}
+
+.slider::before,
+.slider::after{
+  background:linear-gradient(to right,rgba(255,255,255,0.8) 0% ,
+  rgba(255,255,255,0) 100%);
+    content:'';
+    height:100%;
+    position: absolute;
+    width: 15%;
+    z-index:2;
+}
+
+.slider::before{
+  left:0;
+  top:0;
+}
+.slider::after{
+   top:0;
+   right:0;
+} 
